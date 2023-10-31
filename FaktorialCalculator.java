@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
+/**
+ * Program untuk menghitung faktorial dari suatu angka yang diinputkan oleh pengguna.
+ */
 public class FaktorialCalculator {
+    /**
+     * Metode utama program.
+     *
+     * @param args Argumen baris perintah (tidak digunakan dalam program ini).
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -13,6 +21,12 @@ public class FaktorialCalculator {
         input.close(); // Pastikan untuk menutup Scanner setelah digunakan.
     }
 
+    /**
+     * Metode untuk menghitung faktorial dari suatu angka.
+     *
+     * @param n Angka yang akan dihitung faktorialnya.
+     * @return Hasil faktorial dari angka yang diberikan.
+     */
     public static long hitungFaktorial(int n) {
         if (n == 0) {
             return 1;
